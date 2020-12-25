@@ -448,9 +448,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                        sources="BT A2DP In"/>
             </routes>
         </module>
-        <!-- A2DP Input Audio HAL -->
-        <xi:include href="/vendor/etc/a2dp_in_audio_policy_configuration.xml"/>
-
         <!-- Usb Audio HAL -->
         <xi:include href="/vendor/etc/usbv2_audio_policy_configuration.xml"/>
 
