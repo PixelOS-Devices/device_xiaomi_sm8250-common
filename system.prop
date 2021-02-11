@@ -24,6 +24,9 @@ debug.renderengine.backend=skiaglthreaded
 debug.hwui.renderer=skiagl
 renderthread.skia.reduceopstasksplitting=true 
 
+# FUSE passthrough
+persist.sys.fuse.passthrough.enable=true
+
 # IOP
 vendor.iop.enable_prefetch_ofr=1
 vendor.iop.enable_uxe=0
