@@ -265,6 +265,12 @@ service vendor.lowi /vendor/bin/sscrpcd
    group system wakelock
    capabilities BLOCK_SUSPEND
 
+# Mi_Thermald Thermal Service
+service mi_thermald /vendor/bin/mi_thermald
+    class core
+    user root
+    group system
+
 #pd-mapper
 service vendor.pd_mapper /vendor/bin/pd-mapper
     class core
