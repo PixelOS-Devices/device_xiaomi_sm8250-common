@@ -183,14 +183,6 @@ vendor.display.use_layer_ext=0
 vendor.display.use_smooth_motion=1
 debug.sdm.support_writeback=0
 
-# SoundTrigger-Miui
-ro.vendor.audio.miui.karaoke.show=false
-ro.vendor.audio.miui.karaoke.tencent.show=false
-
-# MiSound
-persist.vendor.audio.misound.disable=true
-ro.vendor.audio.misound.bluetooth.enable=true
-
 # Display Refresh Rate
 ro.surface_flinger.set_idle_timer_ms?=4000
 ro.surface_flinger.set_touch_timer_ms?=4000
