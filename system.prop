@@ -18,7 +18,6 @@ ro.vendor.qti.va_aosp.support=1
 # SkiaGL Threaded
 debug.renderengine.backend=skiaglthreaded
 debug.hwui.renderer=skiagl
-renderthread.skia.reduceopstasksplitting=true 
 
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
