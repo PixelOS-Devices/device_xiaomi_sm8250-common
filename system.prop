@@ -1,3 +1,6 @@
+# Bluetooth
+ro.bluetooth.library_name=libbluetooth_qti.so
+
 # Camera
 camera.disable_zsl_mode=true
 
