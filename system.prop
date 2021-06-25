@@ -1,4 +1,5 @@
 # Bluetooth
+persist.vendor.btstack.enable.twsplus=true
 ro.bluetooth.library_name=libbluetooth_qti.so
 persist.vendor.btstack.enable.lpa=true 
 persist.vendor.bt.a2dp.hal.implementation=true
