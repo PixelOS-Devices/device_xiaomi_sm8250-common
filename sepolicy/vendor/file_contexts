@@ -101,3 +101,7 @@
 
 # SDX55M tombstones
 /data/vendor/tombstones/SDX55M(/.*)?           u:object_r:mdm_tombstone_data_file:s0
+
+# Touch Sampling
+/sys/devices/virtual/touch/touch_dev/bump_sample_rate                   u:object_r:sysfs_htsr:s0
+

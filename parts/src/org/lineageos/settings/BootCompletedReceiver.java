@@ -25,6 +25,7 @@ import android.util.Log;
 
 import org.lineageos.settings.thermal.ThermalUtils;
 import org.lineageos.settings.refreshrate.RefreshUtils;
+import org.lineageos.settings.touchsampling.TouchSamplingUtils;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
 
@@ -36,5 +37,6 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         if (DEBUG) Log.d(TAG, "Received boot completed intent");
         ThermalUtils.startService(context);
         RefreshUtils.startService(context);
+        TouchSamplingUtils.restoreSamplingValue(context);
     }
 }
