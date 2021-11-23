@@ -811,66 +811,6 @@ KernelVersionS=${KernelVersionStr:2:2}
 KernelVersionA=${KernelVersionStr:0:1}
 KernelVersionB=${KernelVersionS%.*}
 
-function configure_zram_parameters() {
-    MemTotalStr=`cat /proc/meminfo | grep MemTotal`
-    MemTotal=${MemTotalStr:16:8}
-
-    low_ram=`getprop ro.config.low_ram`
-
-    # Zram disk - 75% for Go devices.
-    # For 512MB Go device, size = 384MB, set same for Non-Go.
-    # For 1GB Go device, size = 768MB, set same for Non-Go.
-    # For 2GB Go device, size = 1536MB, set same for Non-Go.
-    # For >2GB Non-Go devices, size = 50% of RAM size. Limit the size to 4GB.
-    # And enable lz4 zram compression for Go targets.
-
-    let RamSizeGB="( $MemTotal / 1048576 ) + 1"
-    diskSizeUnit=M
-    if [ $RamSizeGB -le 2 ]; then
-        let zRamSizeMB="( $RamSizeGB * 1024 ) * 3 / 4"
-    else
-        let zRamSizeMB="( $RamSizeGB * 1024 ) / 2"
-    fi
-
-    # use MB avoid 32 bit overflow
-    if [ $zRamSizeMB -gt 4096 ]; then
-        let zRamSizeMB=4096
-    fi
-
-    if [ "$low_ram" == "true" ]; then
-        echo lz4 > /sys/block/zram0/comp_algorithm
-    fi
-
-    if [ -f /sys/block/zram0/disksize ]; then
-        disksize=`cat /sys/block/zram0/disksize`
-        if [ $disksize -eq 0 ]; then
-            if [ -f /sys/block/zram0/use_dedup ]; then
-                echo 1 > /sys/block/zram0/use_dedup
-            fi
-            if [ $MemTotal -le 524288 ]; then
-                echo 402653184 > /sys/block/zram0/disksize
-            elif [ $MemTotal -le 1048576 ]; then
-                echo 805306368 > /sys/block/zram0/disksize
-            else
-                zramDiskSize=$zRamSizeMB$diskSizeUnit
-                echo $zramDiskSize > /sys/block/zram0/disksize
-            fi
-
-            # ZRAM may use more memory than it saves if SLAB_STORE_USER
-            # debug option is enabled.
-            if [ -e /sys/kernel/slab/zs_handle ]; then
-                echo 0 > /sys/kernel/slab/zs_handle/store_user
-            fi
-            if [ -e /sys/kernel/slab/zspage ]; then
-                echo 0 > /sys/kernel/slab/zspage/store_user
-            fi
-
-            mkswap /dev/block/zram0
-            swapon /dev/block/zram0 -p 32758
-        fi
-    fi
-}
-
 function configure_read_ahead_kb_values() {
     MemTotalStr=`cat /proc/meminfo | grep MemTotal`
     MemTotal=${MemTotalStr:16:8}
@@ -955,8 +895,6 @@ function configure_memory_parameters() {
     low_ram=`getprop ro.config.low_ram`
 
     if true; then
-        echo 0 > /proc/sys/vm/page-cluster
-
         #add memory limit to camera cgroup
         MemTotalStr=`cat /proc/meminfo | grep MemTotal`
         MemTotal=${MemTotalStr:16:8}
@@ -1055,9 +993,7 @@ function configure_memory_parameters() {
     fi
 
     # Set allocstall_threshold to 0 for all targets.
-    # Set swappiness to 60 for all targets
     echo 0 > /sys/module/vmpressure/parameters/allocstall_threshold
-    echo 60 > /proc/sys/vm/swappiness
 
     # Disable wsf for all targets beacause we are using efk.
     # wsf Range : 1..1000 So set to bare minimum value 1.
@@ -1070,8 +1006,6 @@ function configure_memory_parameters() {
     if [ $MemTotal -le 8388608 ]; then
         echo 0 > /proc/sys/vm/watermark_boost_factor
     fi
-
-    configure_zram_parameters
 
     configure_read_ahead_kb_values
 
