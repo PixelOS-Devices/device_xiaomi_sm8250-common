@@ -1,0 +1,2 @@
+allow untrusted_app_29 sockfs:udp_socket {ioctl};
+allow untrusted_app_29 app_data_file:file { execute };
