@@ -353,4 +353,7 @@
          manually by the user. Off by default, since the expected haptic feedback may not be
          available on some devices. -->
     <bool name="config_enableHapticTextHandle">true</bool>
+    
+    <!-- Path to fast charging status file to detect whether an oem fast charger is active -->
+    <string name="config_oemFastChargerStatusPath" translatable="false">/sys/class/power_supply/bms/fastcharge_mode</string>
 </resources>
