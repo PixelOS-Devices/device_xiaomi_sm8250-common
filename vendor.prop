@@ -168,8 +168,9 @@ ro.surface_flinger.has_HDR_display=true
 
 # Dex2oat
 pm.dexopt.boot=verify
-pm.dexopt.first-boot=verify
+pm.dexopt.first-boot=quicken
 pm.dexopt.install=speed-profile
+pm.dexopt.bg-dexopt=everything
 dalvik.vm.image-dex2oat-filter=speed
 dalvik.vm.image-dex2oat-threads=8
 dalvik.vm.dex2oat-filter=speed
