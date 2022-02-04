@@ -209,6 +209,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     XiaomiParts
 
+# Dex
+PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
+
 # Display
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.composer-service
