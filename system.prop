@@ -3,9 +3,6 @@ camera.disable_zsl_mode=true
 persist.vendor.camera.privapp.list=com.android.camera
 vendor.camera.aux.packagelist=com.android.camera
 
-# Dexopt
-dalvik.vm.dex2oat64.enabled=true
-
 # Display
 debug.gralloc.gfx_ubwc_disable=0
 debug.sf.enable_hwc_vds=0
