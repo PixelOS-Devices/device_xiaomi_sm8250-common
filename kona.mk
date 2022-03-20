@@ -178,7 +178,9 @@ PRODUCT_PACKAGES += \
     libsndmonitor \
     libspkrprot \
     libvisualizer \
-    libvolumelistener
+    libvolumelistener \
+    libadpcmdec \
+    sound_trigger.primary.kona:32
 
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.dolby.ds2.enabled=true \
