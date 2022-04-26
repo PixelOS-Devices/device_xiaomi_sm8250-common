@@ -201,6 +201,7 @@ debug.sf.high_fps_late_sf_phase_offset_ns=-2000000
 debug.sf.hw=0
 debug.sf.auto_latch_unsignaled=true
 persist.demo.hdmirotationlock=false
+debug.force_no_blanking=true
 persist.sys.sf.color_mode=9
 persist.sys.sf.color_saturation=1.0
 persist.sys.sf.native_mode=2
