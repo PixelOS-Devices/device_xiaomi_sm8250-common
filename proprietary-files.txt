@@ -173,11 +173,6 @@ vendor/lib64/libsdm-disp-vndapis.so|fd0b0beac164c92bfa012dbc059cb50cdde2dec6
 vendor/lib64/libsdmextension.so|99377ab065105f0cbd17bbe5907cdbb8027a9f17
 vendor/lib64/libtinyxml2_1.so|fb0a2b16e5cfd28515268edc5c2345190d1ef4e5
 
-# Display (SDM Miui)
-vendor/lib64/libgame_enhance.so
-vendor/lib64/libhdrdynamic.so
-vendor/lib64/libhdrdynamicootf.so
-
 # Display postprocessing - from LA.UM.9.12.r1-13700.03-SMxx50.QSSI12.0
 vendor/bin/hw/vendor.display.color@1.0-service|9c77c3655befc1c53f842e1b9605b83e3dc64259
 vendor/bin/ppd|c478fa8957564bf1b2649b6ba80c07f72b0b318f
