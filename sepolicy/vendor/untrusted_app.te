@@ -1,0 +1,6 @@
+# dontaudit
+dontaudit untrusted_app proc_zoneinfo: file { read };
+dontaudit untrusted_app system_lib_file:file { execmod };
+dontaudit untrusted_app proc_version:file { read };
+allow untrusted_app proc_net_tcp_udp:file { read };
+allow untrusted_app rootfs:dir { read };
