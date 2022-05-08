@@ -159,12 +159,14 @@ vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|2163df1cf5
 # Consumer IR
 vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.kona.so
 
-# Display (HDR) - from LA.UM.9.12.r1-13700.03-SMxx50.QSSI12.0
+# Display (HDR) - from LA.UM.9.12.r1-14000-SMxx50.0
 vendor/lib64/libhdr_tm.so|4be3cfff1ef40cbc6ad329b79c60881263aa6723
+vendor/lib64/libhdrdynamic.so|5f25a3b1ff5e58c317652c3b02d52d19cfb77315
+vendor/lib64/libhdrdynamicootf.so|538384bf34a18a001e0a8761d3fa3ab571bda128
 
-# Display (SDM) - from LA.UM.9.12.r1-13700.03-SMxx50.QSSI12.0
+# Display (SDM) - from LA.UM.9.12.r1-14000-SMxx50.0
 vendor/lib64/libdisplayqos.so|15701f18257c43be5657bbd867a8acf1f469e373
-vendor/lib64/libdisplayskuutils.so|3ddb2ffe55aa9aef686cf3be00ae5e0d1d8f9d93
+vendor/lib64/libdisplayskuutils.so|1ebb27593b446d5be3300646bf86c8b5b9e59f65
 vendor/lib64/libqseed3.so|c9fb729cf48278d0c87d27c0af17ae3a8ccb1bf7
 vendor/lib64/libsdm-color.so|29cbc16f6fa573d21f48e2be2ff0d51de3357378
 vendor/lib64/libsdm-colormgr-algo.so|1fb7f3cb11557bbf677afb5d6eda0e4e9fd3ac58
@@ -173,10 +175,12 @@ vendor/lib64/libsdm-disp-vndapis.so|fd0b0beac164c92bfa012dbc059cb50cdde2dec6
 vendor/lib64/libsdmextension.so|99377ab065105f0cbd17bbe5907cdbb8027a9f17
 vendor/lib64/libtinyxml2_1.so|fb0a2b16e5cfd28515268edc5c2345190d1ef4e5
 
-# Display postprocessing - from LA.UM.9.12.r1-13700.03-SMxx50.QSSI12.0
+# Display postprocessing - from LA.UM.9.12.r1-14000-SMxx50.0
 vendor/bin/hw/vendor.display.color@1.0-service|9c77c3655befc1c53f842e1b9605b83e3dc64259
 vendor/bin/ppd|c478fa8957564bf1b2649b6ba80c07f72b0b318f
 vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437e5499cb94f48
+vendor/bin/qdcmss|536c34abfbf7833df440bfcd264bacdc88318067
+vendor/etc/init/qdcmss.rc|53d78d686678c4f923a9ec4ace7d4d3575b13788
 vendor/lib64/libdisp-aba.so|902839da31464e54bd4756747db2dd7ad867484f
 vendor/lib64/vendor.display.color@1.0.so|a404c41c1bbb827309e4be1576c7c7b493a6f6d6
 vendor/lib64/vendor.display.color@1.1.so|3e5f53e9d8fcf7eae6dcd1cc7eb7609a78647c2e
