@@ -10,6 +10,11 @@
                      samplingRates="24000,16000"
                      channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
         </mixPort>
+        <!-- Spatial Audio Ports -->
+        <mixPort name="immersive_out" role="source" flags="AUDIO_OUTPUT_FLAG_SPATIALIZER">
+            <profile name="" format="AUDIO_FORMAT_PCM_FLOAT"
+                     samplingRates="48000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
+        </mixPort>
     </mixPorts>
     <devicePorts>
         <!-- A2DP Audio Ports -->
@@ -33,11 +38,11 @@
     </devicePorts>
     <routes>
         <route type="mix" sink="BT A2DP Out"
-               sources="a2dp output"/>
+               sources="a2dp output,immersive_out"/>
         <route type="mix" sink="BT A2DP Headphones"
-               sources="a2dp output"/>
+               sources="a2dp output,immersive_out"/>
         <route type="mix" sink="BT A2DP Speaker"
-               sources="a2dp output"/>
+               sources="a2dp output,immersive_out"/>
         <route type="mix" sink="BT Hearing Aid Out"
                sources="hearing aid output"/>
     </routes>

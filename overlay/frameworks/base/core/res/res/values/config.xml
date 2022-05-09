@@ -362,9 +362,13 @@
 
     <!-- Disables pocket mode lock -->
     <bool name="config_pocketModeSupported">false</bool>
-    
+
     <!-- The list of package IDs that are allowed to skip camera high frame rate checks. -->
     <string-array name="config_cameraHFRPrivAppList" translatable="false">
         <item>com.android.camera</item>
     </string-array>
+
+    <!-- The default value for whether head tracking for
+         spatial audio is enabled for a newly connected audio device -->
+    <bool name="config_spatial_audio_head_tracking_enabled_default">true</bool>
 </resources>
