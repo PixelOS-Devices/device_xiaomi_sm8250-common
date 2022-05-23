@@ -148,15 +148,10 @@ ro.crypto.allow_encrypt_override=true
 ro.crypto.volume.filenames_mode=aes-256-cts
 
 # Dexopt
-pm.dexopt.first-boot=quicken
-pm.dexopt.bg-dexopt=everything
-pm.dexopt.boot=verify
-pm.dexopt.install=speed-profile
-dalvik.vm.image-dex2oat-filter=speed
+dalvik.vm.boot-dex2oat-cpu-set=1,2,3,4,5,6,7
+dalvik.vm.boot-dex2oat-threads=7
+dalvik.vm.image-dex2oat-cpu-set=0,1,2,3,4,5,6,7
 dalvik.vm.image-dex2oat-threads=8
-dalvik.vm.dex2oat-filter=speed
-dalvik.vm.dex2oat-threads=8
-dalvik.vm.dex2oat64.enabled=true
 
 # Display
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
