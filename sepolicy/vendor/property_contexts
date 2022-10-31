@@ -8,6 +8,7 @@ persist.vendor.bt.                                                              
 persist.vendor.btstack.                                                                             u:object_r:vendor_bluetooth_prop:s0
 
 # Camera
+audio.camerasound.                                                                                  u:object_r:vendor_default_prop:s0
 camera.                                                                                             u:object_r:vendor_camera_prop:s0
 persist.camera.                                                                                     u:object_r:vendor_camera_prop:s0
 persist.vendor.EnableP3ColorSpace                                                                   u:object_r:vendor_camera_prop:s0
