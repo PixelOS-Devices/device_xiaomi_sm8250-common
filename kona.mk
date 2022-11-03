@@ -96,6 +96,16 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
+
+# Background dexopt OTA
+PRODUCT_VENDOR_PROPERTIES += \
+    pm.dexopt.ab-ota=speed-profile
+
+# Preopted ODEX files (system_other)
+PRODUCT_PACKAGES += \
+    cppreopts.sh
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.cp_system_other_odex=1
 endif
 
 # ART Debugging (Disable)
