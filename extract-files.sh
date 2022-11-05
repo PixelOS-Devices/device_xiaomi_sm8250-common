@@ -65,6 +65,14 @@ if [ -z "${ONLY_TARGET}" ]; then
     extract "${MY_DIR}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTION}"
 fi
 
+function blob_fixup() {
+    case "${1}" in
+        vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service | vendor/lib*/libstagefrightdolby.so | vendor/lib*/libstagefright_soft_*.so | vendor/lib*/libdlbdsservice.so)
+            "${PATCHELF}" --add-needed "libstagefright_foundation-v33-dolby.so" "${2}"
+            ;;
+    esac
+}
+
 if [ -z "${ONLY_COMMON}" ] && [ -s "${MY_DIR}/../${DEVICE}/proprietary-files.txt" ]; then
     # Reinitialize the helper for device
     source "${MY_DIR}/../${DEVICE}/extract-files.sh"

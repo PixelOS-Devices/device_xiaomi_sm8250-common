@@ -190,6 +190,13 @@ ro.surface_flinger.set_display_power_timer_ms?=1000
 ro.surface_flinger.use_content_detection_for_refresh_rate=true
 vendor.display.defer_fps_frame_count?=2
 
+# Dolby
+persist.vendor.audio.delta.refresh=true
+ro.vendor.audio.dolby.dax.support=true
+ro.vendor.audio.dolby.dax.version=DAX3_3.6
+ro.vendor.audio.dolby.surround.enable=true
+ro.vendor.dolby.dax.version=DAX3_3.6.1.6_r1
+
 # DRM
 drm.service.enabled=true
 
