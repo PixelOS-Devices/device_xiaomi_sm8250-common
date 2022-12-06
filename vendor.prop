@@ -308,3 +308,6 @@ wifi.aware.interface=wifi-aware0
 
 # WFD
 debug.sf.enable_hwc_vds=1
+
+# Zygote
+zygote.critical_window.minute=10
