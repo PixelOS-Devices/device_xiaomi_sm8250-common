@@ -4,3 +4,6 @@ type hal_motor_hwservice, hwservice_manager_type;
 
 # Dolby
 type hal_dms_hwservice, hwservice_manager_type;
+
+# Touch Feature
+type hal_touchfeature_xiaomi_hwservice, hwservice_manager_type;
