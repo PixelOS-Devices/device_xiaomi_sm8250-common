@@ -139,7 +139,7 @@ persist.vendor.btstack.enable.lpa=true
 persist.vendor.camera.perflock.enable=0
 
 # Chipset
-ro.soc.manufacturer=Qualcomm
+ro.soc.manufacturer=QTI
 ro.soc.model=SM8250
 
 # Crypto
