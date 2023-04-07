@@ -184,37 +184,6 @@ vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 # Consumer IR
 vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.kona.so
 
-# Dolby Miui Alioth
-system/lib/vendor.dolby.hardware.dms@2.0.so
-system/lib64/vendor.dolby.hardware.dms@2.0.so
-vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service
-vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc
-vendor/etc/vintf/manifest/manifest_vendor.dolby.hardware.dms.xml
-vendor/lib/libdapparamstorage.so
-vendor/lib/libdeccfg.so
-vendor/lib/libstagefrightdolby.so
-vendor/lib/vendor.dolby.hardware.dms@2.0.so
-vendor/lib64/libdapparamstorage.so
-vendor/lib64/libdeccfg.so
-vendor/lib64/libdlbdsservice.so
-vendor/lib64/libstagefrightdolby.so
-vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so
-vendor/lib64/vendor.dolby.hardware.dms@2.0.so
-
-# Dolby OnePlus Imports
-system_ext/etc/sysconfig/config-com.dolby.daxappui.xml|fce084b5ea52db53d25a7bbf64d8c7ce
-system_ext/etc/sysconfig/config-com.dolby.daxservice.xml|cd1424d569038a393fccadb457c930c2
-system_ext/etc/sysconfig/hiddenapi-com.dolby.daxservice.xml|3d8dfe8008f667cf2b3572983c08c3af
--system_ext/priv-app/DaxUI/DaxUI.apk|feae263be94cabae10ade62f50fb7051
--system_ext/priv-app/daxService/daxService.apk|2e2c5f6939d7545c7f59fa2b15deb727
-
-# Dolby MediaCodecs
-vendor/lib/libstagefright_soft_ac4dec.so
-vendor/lib/libstagefright_soft_ddpdec.so
-vendor/lib/libstagefright_soft_qtiflacdec.so
-vendor/lib64/libstagefright_soft_ac4dec.so
-vendor/lib64/libstagefright_soft_ddpdec.so
-
 # Display (Dpps)
 vendor/lib/libdpps.so
 vendor/lib64/libdpps.so
