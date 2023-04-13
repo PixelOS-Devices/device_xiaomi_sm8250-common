@@ -15,8 +15,6 @@
      limitations under the License.
 -->
 <resources>
-    <!-- Ambient settings -->
-    <string name="ambient_enable">Use Ambient display</string>
 
     <!-- HBM settings -->
     <string name="hbm_fragment_title">High brightness mode</string>
