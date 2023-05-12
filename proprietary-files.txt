@@ -466,8 +466,8 @@ vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so
 
-# IMS (APK) - from renoir
--system_ext/priv-app/ims/ims.apk|aec5dff2bb9c75f02988a55644229d03
+# IMS (APK) - from patched source
+system_ext/priv-app/ims/ims.apk
 
 # IRQ balance
 vendor/bin/msm_irqbalance
