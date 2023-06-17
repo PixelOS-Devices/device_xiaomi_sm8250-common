@@ -49,6 +49,11 @@ vendor/lib64/soundfx/libshoebox.so
 
 # Audio FX modules dependencies
 system_ext/etc/permissions/audiosphere.xml
+system_ext/lib/libav_ozodecoder.so:vendor/lib/libav_ozodecoder.so
+system_ext/lib/libav_ozoencoder.so:vendor/lib/libav_ozoencoder.so
+system_ext/lib/libozoaudio.so:vendor/lib/libozoaudio.so
+system_ext/lib/libozowidening.so:vendor/lib/libozowidening.so
+system_ext/lib/soundfx/libozoprocessing.so:vendor/lib/soundfx/libozoprocessing.so
 system_ext/framework/audiosphere.jar
 vendor/bin/audioflacapp
 vendor/bin/loadalgo
