@@ -16,3 +16,6 @@ vendor.nxp.nxpnfc::INxpNfc                                          u:object_r:h
 
 # Touch Feature
 vendor.xiaomi.hardware.touchfeature::ITouchFeature                                    u:object_r:hal_touchfeature_xiaomi_hwservice:s0
+
+# Dolby
+vendor.dolby.hardware.dms::IDms                                            u:object_r:hal_dms_hwservice:s0

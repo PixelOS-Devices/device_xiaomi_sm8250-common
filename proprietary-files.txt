@@ -511,6 +511,25 @@ system_ext/lib64/libmmparser_lite.so
 vendor/lib/libmmosal.so
 vendor/lib64/libmmosal.so
 
+# Media (Dolby) - MIUI
+vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service|ff827406bbcd1c82e790730bb017b7af38850004
+vendor/etc/dolby/dax-default.xml|d28bc00c53fc1bfb53a5f02e7ddfad4697ba697c
+vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc|29296ebfe89b2697fec573be73cc3757fd97bed6
+vendor/etc/media_codecs_dolby_audio.xml|a794eb15fc198d0285510260025cd99b53fa174f
+vendor/etc/vintf/manifest/manifest_vendor.dolby.hardware.dms.xml|c8095f649de19b80271fb429b4b6b439297a0678
+vendor/lib/libdapparamstorage.so|d1952f09354f414238e5bd0f57dd0d3f85b8f769
+vendor/lib/libdeccfg.so|c9ea6a462e3a0d00e31223bf2a9c5dd84beff122
+vendor/lib/libstagefright_soft_ac4dec.so|c74f0a1f7b6f58da01e83b4f4db4a9c19fa52462
+vendor/lib/libstagefright_soft_ddpdec.so|f7c10aa69dc46e881021d198bdbca26157f1cc80
+vendor/lib/soundfx/libhwdap.so|4832a5e6e67831980f7d1c68727335567fe9dc53
+vendor/lib/soundfx/libswgamedap.so|93101491221a06b02ab02b12288d00110645e48f
+vendor/lib/soundfx/libswvqe.so|4123ad118d98e3bc2573f0e972703789d2451637
+vendor/lib/vendor.dolby.hardware.dms@2.0.so|2bf537bbf5c413527e5c648b8e63b95f904f7532
+vendor/lib64/libdapparamstorage.so|a8e3bb20ee8579a13d5beef17a0ad251055e9d7b
+vendor/lib64/libdlbdsservice.so|c4658f58874db5964a74e9509a4e0160affd164f
+vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so|e90be71a671e64662742b6ee36d7060ed9974726
+vendor/lib64/vendor.dolby.hardware.dms@2.0.so|2020b5fd9abac65520224069bbe75d5e76d3f158
+
 # Media configs
 odm/etc/media_profiles_V1_0.xml
 vendor/etc/media_codecs.xml
