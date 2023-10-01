@@ -26,6 +26,7 @@ vendor/lib/libdrc.so
 vendor/lib/libqtigef.so
 vendor/lib/libssrec.so
 vendor/lib/libsurround_3mic_proc.so
+vendor/etc/audio_effects.xml|d63f0289e1e2209a2c27c70eaba417c4d688def6
 
 # Audio FX OzoAudio
 system_ext/lib/libav_ozodecoder.so:vendor/lib/libav_ozodecoder.so
