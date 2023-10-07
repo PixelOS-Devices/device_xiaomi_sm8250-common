@@ -243,6 +243,11 @@ PRODUCT_PACKAGES += \
     media_codecs_kona.xml \
     media_codecs_performance_kona.xml
 
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml
+
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc-service.nxp \
