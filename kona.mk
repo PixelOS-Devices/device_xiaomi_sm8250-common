@@ -507,6 +507,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.sys.thermal.data.path=/data/vendor/thermal/
 
 # USB
+PRODUCT_HAS_GADGET_HAL := true
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.2-service-xiaomi_alioth
 
