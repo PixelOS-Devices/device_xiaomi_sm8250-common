@@ -309,6 +309,10 @@ PRODUCT_PACKAGES += \
     libipanat \
     liboffloadhal
 
+# Input
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/keylayout/kona-mtp-snd-card_Button_Jack.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/kona-mtp-snd-card_Button_Jack.kl
+
 # Kernel
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
