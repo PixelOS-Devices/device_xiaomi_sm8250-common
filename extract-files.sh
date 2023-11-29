@@ -109,7 +109,7 @@ function blob_fixup() {
             "${PATCHELF}" --replace-needed "libcodec2_hidl@1.0.so" "libcodec2_hidl@1.0_sp.so" "${2}"
             "${PATCHELF}" --replace-needed "libcodec2_vndk.so" "libcodec2_vndk_sp.so" "${2}"
             ;;
-        odm/lib64/libcodec2_hidl_plugin_sp.so|odm/lib64/libcodec2_soft_common_sp.so|odm/lib64/libcodec2_store_dolby_sp.so)
+        odm/lib64/libcodec2_store_dolby_sp.so)
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed "libcodec2_vndk.so" "libcodec2_vndk_sp.so" "${2}"
             ;;
@@ -117,15 +117,26 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed "libcodec2_vndk.so" "libcodec2_vndk_sp.so" "${2}"
             "${PATCHELF}" --replace-needed "libcodec2_soft_common.so" "libcodec2_soft_common_sp.so" "${2}"
+            "${PATCHELF}" --replace-needed "libstagefright_foundation.so" "libstagefright_foundation-v33.so" "${2}"
             ;;
         odm/lib64/libcodec2_vndk_sp.so)
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed "libui.so" "libui_sp.so" "${2}"
+            "${PATCHELF}" --replace-needed "libstagefright_foundation.so" "libstagefright_foundation-v33.so" "${2}"
             ;;
         odm/lib64/libcodec2_hidl@1.0_sp.so)
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed "libcodec2_hidl_plugin.so" "libcodec2_hidl_plugin_sp.so" "${2}"
             "${PATCHELF}" --replace-needed "libcodec2_vndk.so" "libcodec2_vndk_sp.so" "${2}"
+            ;;
+        odm/lib64/libcodec2_hidl_plugin_sp.so|odm/lib64/libcodec2_soft_common_sp.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --replace-needed "libcodec2_vndk.so" "libcodec2_vndk_sp.so" "${2}"
+            "${PATCHELF}" --replace-needed "libstagefright_foundation.so" "libstagefright_foundation-v33.so" "${2}"
+            ;;
+        odm/lib/libdlbdsservice_v3_6.so|odm/lib/libstagefright_soft_ddpdec.so|odm/lib64/libdlbdsservice_sp.so|odm/lib64/libdlbdsservice_v3_6.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --replace-needed "libstagefright_foundation.so" "libstagefright_foundation-v33.so" "${2}"
             ;;
         odm/lib64/libui_sp.so)
             [ "$2" = "" ] && return 0
