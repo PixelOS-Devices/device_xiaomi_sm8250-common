@@ -29,6 +29,10 @@ vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libmisoundfx.so
 vendor/lib/soundfx/libshoebox.so
 
+# Audio (spatializer) - from cheetah-user 14 UQ1A.240205.002
+vendor/lib/soundfx/libspatialaudio.so|1903f9c98b38728970ddd12094fa15d96e9d2a5b
+vendor/lib64/soundfx/libspatialaudio.so|0242ecf82a322d6654d859123d4dd221c3c2bf12
+
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
