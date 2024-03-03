@@ -476,17 +476,14 @@ PRODUCT_PACKAGES += \
     init.class_main.sh \
     init.mdm.sh \
     init.mi.btmac.sh \
-    init.mi.usb.sh \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
     init.qcom.sh \
-    init.qcom.usb.sh \
     init.qti.dcvs.sh
 
 PRODUCT_PACKAGES += \
     init.qcom.power.rc \
     init.qcom.rc \
-    init.qcom.usb.rc \
     init.recovery.qcom.rc \
     init.target.rc \
     init.xiaomi.rc \
@@ -551,7 +548,14 @@ PRODUCT_PACKAGES += \
 # USB
 PRODUCT_HAS_GADGET_HAL := true
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.2-service-xiaomi_alioth
+    android.hardware.usb@1.3-service-qti
+
+PRODUCT_PACKAGES += \
+    init.qcom.usb.rc \
+    init.qcom.usb.sh
+
+PRODUCT_SOONG_NAMESPACES += \
+    vendor/qcom/opensource/usb/etc
 
 # Vendor service manager
 PRODUCT_PACKAGES += \
