@@ -78,6 +78,9 @@ ifeq ($(TARGET_HAS_UDFPS),true)
 TARGET_USES_FOD_ZPOS := true
 endif
 
+# Dolby
+AUDIO_FEATURE_ENABLED_DS2_DOLBY_DAP := true
+
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
