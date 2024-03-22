@@ -23,12 +23,14 @@
         <SwitchPreferenceCompat
             android:key="hbm"
             android:title="@string/hbm_mode_title"
+            android:icon="@drawable/ic_hbm_tile"
             android:summary="@string/hbm_mode_summary"
             android:defaultValue="false" />
 
         <SwitchPreferenceCompat
             android:key="auto_hbm"
             android:title="@string/auto_hbm_title"
+            android:icon="@drawable/ic_auto_hbm"
             android:summary="@string/auto_hbm_summary" />
 
         <org.lineageos.settings.hbm.AutoHBMThresholdPreference
