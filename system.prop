@@ -8,6 +8,7 @@ persist.vendor.cne.feature=1
 # Display
 debug.gralloc.gfx_ubwc_disable=0
 debug.sf.enable_hwc_vds=1
+debug.sf.predict_hwc_composition_strategy=0
 persist.vendor.color.matrix=2
 
 # DPM
