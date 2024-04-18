@@ -26,7 +26,6 @@ import android.os.SystemProperties;
 import android.util.Log;
 import androidx.preference.PreferenceManager;
 
-import org.lineageos.settings.popupcamera.PopupCameraUtils;
 import org.lineageos.settings.thermal.ThermalUtils;
 import org.lineageos.settings.utils.FileUtils;
 public class BootCompletedReceiver extends BroadcastReceiver {
@@ -41,7 +40,6 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
         
         if (DEBUG) Log.d(TAG, "Received boot completed intent");
-        PopupCameraUtils.checkPopupCameraService(context);
         ThermalUtils.startService(context);
         FileUtils.enableService(context);
 
