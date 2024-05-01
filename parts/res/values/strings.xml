@@ -44,7 +44,7 @@
     <string name="refresh_default">Default</string>
     <string name="refresh_standard">Standard (60Hz)</string>    
     <string name="refresh_extreme">Extreme (120Hz)</string>    
-    <string name="refresh_extreme">Ultra (144Hz)</string>
+    <string name="refresh_ultra">Ultra (144Hz)</string>
 
     <!-- High Touch Polling -->
     <string name="htsr_title">Touch Responsiveness</string>
