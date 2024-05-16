@@ -951,6 +951,30 @@
       "Node": "DoubleTapToWake",
       "Duration": 0,
       "Value": "1"
+    },
+    {
+      "PowerHint": "GAME",
+      "Node": "CPUBigClusterMinFreq",
+      "Duration": 0,
+      "Value": "1958400"
+    },
+    {
+      "PowerHint": "GAME",
+      "Node": "CPUBigPlusClusterMinFreq",
+      "Duration": 0,
+      "Value": "2073600"
+    },
+    {
+      "PowerHint": "GAME",
+      "Node": "CPULittleClusterMinFreq",
+      "Duration": 0,
+       "Value": "9999999"
+    },
+    {
+      "PowerHint": "GAME",
+      "Node": "GPUMinFreq",
+      "Duration": 0,
+      "Value": "670000000"
     }
   ]
 }
