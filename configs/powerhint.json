@@ -93,40 +93,32 @@
     },
     {
       "Name": "GPUMaxFreq",
-      "Path": "/sys/class/kgsl/kgsl-3d0/max_pwrlevel",
+      "Path": "/sys/class/kgsl/kgsl-3d0/devfreq/max_freq",
       "Values": [
-        "0",
-        "1"
-      ],
-      "Comments": [
-        "0 => 670000000",
-        "1 => 587000000"
+        "670000000",
+        "587000000",
+        "525000000",
+        "490000000",
+        "441600000",
+        "400000000",
+        "305000000",
+        "150000000"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
     },
     {
       "Name": "GPUMinFreq",
-      "Path": "/sys/class/kgsl/kgsl-3d0/min_pwrlevel",
+      "Path": "/sys/class/kgsl/kgsl-3d0/devfreq/min_freq",
       "Values": [
-        "0",
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7"
-      ],
-      "Comments": [
-        "0 => 670000000",
-        "1 => 587000000",
-        "2 => 525000000",
-        "3 => 490000000",
-        "4 => 441600000",
-        "5 => 400000000",
-        "6 => 305000000",
-        "7 => 150000000"
+        "670000000",
+        "587000000",
+        "525000000",
+        "490000000",
+        "441600000",
+        "400000000",
+        "305000000",
+        "150000000"
       ],
       "ResetOnInit": true
     },
@@ -343,7 +335,7 @@
       "PowerHint": "SUSTAINED_PERFORMANCE",
       "Node": "GPUMaxFreq",
       "Duration": 0,
-      "Value": "1"
+      "Value": "587000000"
     },
     {
       "PowerHint": "INTERACTION",
@@ -505,13 +497,13 @@
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "GPUMinFreq",
       "Duration": 0,
-      "Value": "1"
+      "Value": "587000000"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "GPUMaxFreq",
       "Duration": 0,
-      "Value": "0"
+      "Value": "670000000"
     },
     {
       "PowerHint": "FIXED_PERFORMANCE",
@@ -553,13 +545,13 @@
       "PowerHint": "FIXED_PERFORMANCE",
       "Node": "GPUMaxFreq",
       "Duration": 0,
-      "Value": "0"
+      "Value": "670000000"
     },
     {
       "PowerHint": "FIXED_PERFORMANCE",
       "Node": "GPUMinFreq",
       "Duration": 0,
-      "Value": "0"
+      "Value": "670000000"
     },
     {
       "PowerHint": "Flipendo",
@@ -601,7 +593,7 @@
       "PowerHint": "GAME",
       "Node": "GPUMinFreq",
       "Duration": 0,
-      "Value": "650000000"
+      "Value": "670000000"
     }
   ]
 }
