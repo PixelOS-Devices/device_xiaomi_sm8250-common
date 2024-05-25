@@ -82,6 +82,7 @@
       "Path": "/sys/devices/system/cpu/cpu7/cpufreq/scaling_min_freq",
       "Values": [
         "9999999",
+        "2457600",
         "1862400",
         "1190400",
         "1747200",
@@ -153,6 +154,7 @@
       "Name": "TASchedtuneBoost",
       "Path": "/dev/stune/top-app/schedtune.boost",
       "Values": [
+        "10",
         "1",
         "0"
       ],
@@ -581,13 +583,13 @@
       "PowerHint": "GAME",
       "Node": "CPUBigClusterMinFreq",
       "Duration": 0,
-      "Value": "9999999"
+      "Value": "1958400"
     },
     {
       "PowerHint": "GAME",
       "Node": "CPUBigPlusClusterMinFreq",
       "Duration": 0,
-      "Value": "9999999"
+      "Value": "2457600"
     },
     {
       "PowerHint": "GAME",
@@ -600,6 +602,12 @@
       "Node": "GPUMinFreq",
       "Duration": 0,
       "Value": "670000000"
+    },
+    {
+      "PowerHint": "GAME",
+      "Node": "TASchedtuneBoost",
+      "Duration": 0,
+      "Value": "10"
     }
   ]
 }
