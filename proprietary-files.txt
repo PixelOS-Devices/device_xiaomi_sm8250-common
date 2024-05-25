@@ -1,4 +1,4 @@
-# Unpinned blobs from alioth_global-user 13 TKQ1.221114.001 V816.0.2.0.TKHMIXM release-keys
+# Unpinned blobs from munch_global-user 14 UKQ1.231207.002 V816.0.1.0.ULMMIXM release-keys
 # phone1: Nothing/Spacewar/Spacewar:14/UP1A.231005.007/2401062238:user/release-keys
 
 # ADSP
@@ -601,7 +601,7 @@ vendor/bin/pm-service
 vendor/lib64/libperipheral_client.so
 
 # Power-off alarm
--product/app/PowerOffAlarm/PowerOffAlarm.apk
+-system_ext/app/PowerOffAlarm/PowerOffAlarm.apk
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
 vendor/bin/power_off_alarm
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
