@@ -364,4 +364,7 @@
     <string-array name="config_cameraHFRPrivAppList" translatable="false">
         <item>com.android.camera</item>
     </string-array>
+    
+    <!-- Disables pocket mode lock -->
+    <bool name="config_pocketModeSupported">false</bool>
 </resources>
