@@ -359,4 +359,7 @@
 
     <!-- Whether device has screen with higher aspect ratio -->
     <bool name="config_haveHigherAspectRatioScreen">true</bool>
+
+    <!-- Disables pocket mode lock -->
+    <bool name="config_pocketModeSupported">false</bool>
 </resources>
