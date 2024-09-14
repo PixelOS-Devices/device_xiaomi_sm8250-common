@@ -22,6 +22,15 @@ vendor/lib/libdrc.so
 vendor/lib/libqtigef.so
 vendor/lib/libssrec.so
 vendor/lib/libsurround_3mic_proc.so
+vendor/lib/libsndmonitor.so
+vendor/lib/libspkrprot.so
+vendor/lib/libaudioparsers.so
+vendor/lib/libbatterylistener.so
+vendor/lib/libcomprcapture.so
+vendor/lib/libexthwplugin.so
+vendor/lib/libhdmiedid.so
+vendor/lib/libhdmipassthru.so
+vendor/lib/libhfp.so
 
 # Audio FX modules
 vendor/lib/soundfx/libasphere.so
