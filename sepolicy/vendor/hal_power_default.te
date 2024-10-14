@@ -3,3 +3,6 @@ allow hal_power_default sysfs_touchpanel:file rw_file_perms;
 
 # To do powerhint on nodes defined in powerhint.json
 allow hal_power_default vendor_latency_device:chr_file rw_file_perms;
+
+# allow power hal to search sysfs_fs_f2fs
+allow hal_power_default sysfs_fs_f2fs:dir search;
