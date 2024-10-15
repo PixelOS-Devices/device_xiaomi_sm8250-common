@@ -68,7 +68,7 @@ function lib_to_package_fixup() {
 setup_vendor "${DEVICE_COMMON}" "${VENDOR_COMMON:-$VENDOR}" "${ANDROID_ROOT}" true
 
 # Warning headers and guards
-write_headers "alioth apollon cas cmi dagu elish enuma lmi munch pipa psyche thyme umi"
+write_headers "alioth apollo cas cmi dagu elish enuma lmi munch pipa psyche thyme umi"
 
 # The standard common blobs
 write_makefiles "${MY_DIR}/proprietary-files.txt" true
