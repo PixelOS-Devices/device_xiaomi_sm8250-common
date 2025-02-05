@@ -199,6 +199,26 @@ odm/lib64/libdlbdsservice_v3_6.so|08ae454ff029791ba436f750ca6c717cb6d7bf36
 odm/lib64/vendor.dolby_v3_6.hardware.dms360@2.0-impl.so|5b5f4b383c03a6aaa759b1cc7f6f0aea7d1f6ba0
 odm/lib64/vendor.dolby_v3_6.hardware.dms360@2.0.so|e62f04117fead61eea7f2593e7ccbb565436a0ee
 
+# Dolby Media - from OnePlus 11 CPH2447_15.0.0.401(EX01)
+odm/bin/hw/vendor.dolby_sp.hardware.dmssp@2.0-service|1240cecce2ad8943c2aa5b96381ebeb5e1bac43d
+odm/bin/hw/vendor.dolby_sp.media.c2@1.0-service|cafd800a4e83afa206347886cfed48cdb50cb80c|970da07e08143319ccc01e6e8ac4e262a064618d
+odm/etc/init/vendor.dolby.media.c2@1.0-service.rc|6af989419070ea6b4646f47ab78849d7549abda3
+odm/etc/init/vendor.dolby_sp.hardware.dmssp@2.0-service.rc|94c85fbfc93527395fcc1bb7bfb58734f245d4f3
+odm/etc/vintf/manifest/vendor.dolby.hardware.dms.xml|dc9ebef89624d524fe76724e9a220b5d2affe62b
+odm/lib64/libcodec2_hidl@1.0.so:odm/lib64/libcodec2_hidl@1.0_sp.so;FIX_SONAME|4b662f2ecc5c66874f93407c48f492b2d09ce47c|1ad0150db808b8400483fb4edfb4ba90a11b4541
+odm/lib64/libcodec2_hidl_plugin.so:odm/lib64/libcodec2_hidl_plugin_sp.so;FIX_SONAME|2dbcfda2c7d867edf106fc72d02b11c719f676fb|3e6fe60c3b77a121b6dd69962a1883b2165d51f3
+odm/lib64/libcodec2_soft_ac4dec_sp.so|b22d228a84b1698bca8c95aaf67324f47a8262bb|de7b1476d8d3e88fa23831fb0730e9f36bcb29a6
+odm/lib64/libcodec2_soft_common.so:odm/lib64/libcodec2_soft_common_sp.so;FIX_SONAME|5cce54ffe4e82ca9d6ca6606ac66b599ac28ea71|ccae9dbfb18b67d2f08c1789fa0f4e2dcf15d743
+odm/lib64/libcodec2_soft_ddpdec_sp.so|c2034f16911dd7ae4c58c4e05c4f54b4293faef3|411ad092081442607b5196b3d25cb97d75387ba7
+odm/lib64/libcodec2_store_dolby_sp.so|4b9e3bd2fd8ffd49d50b81926cb89f7916c7a212|aa83fb43acda11d8ca7a5f67cef230c2be196672
+odm/lib64/libdapparamstorage_sp.so|f275e0f47c40b72890ee1cde373e60b4b2ffd711
+odm/lib64/libdeccfg_sp.so|e7f27c1009baecf84835deee1a7e296c5dc3f4e6
+odm/lib64/libdlbdsservice_sp.so|7c1847cce3d0c7f4ce5658090d752e493e8570ea
+odm/lib64/libui.so:odm/lib64/libui_sp.so;FIX_SONAME|88b8584db2fa78d0ec06d89f623f8321721051e1|ede189be946ec3ca1502188e2895be944fe6e4ae
+odm/lib64/vendor.dolby_sp.hardware.dmssp@2.0-impl.so|b51e6a885a738023ce6ec97b702d6733b70d0a15
+odm/lib64/vendor.dolby_sp.hardware.dmssp@2.0.so|2173d68717cbcdaab98e1cf15a0d410ea00d0271
+vendor/lib64/libcodec2_vndk.so:odm/lib64/libcodec2_vndk_sp.so;FIX_SONAME|d9d17fd476ee2c3593b0f123af957132e34211af|c96cf0b2b4253505c7b4a0febbea1d5e6984a88d
+
 # DPM
 system/framework/tcmclient.jar
 system_ext/bin/dpmd

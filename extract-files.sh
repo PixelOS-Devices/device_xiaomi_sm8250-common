@@ -103,6 +103,36 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             grep -q "libcrypto_shim.so" "${2}" || "${PATCHELF}" --add-needed "libcrypto_shim.so" "${2}"
             ;;
+        # Dolby START
+        odm/bin/hw/vendor.dolby_sp.media.c2@1.0-service)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --replace-needed "libcodec2_hidl@1.0.so" "libcodec2_hidl@1.0_sp.so" "${2}"
+            "${PATCHELF}" --replace-needed "libcodec2_vndk.so" "libcodec2_vndk_sp.so" "${2}"
+            ;;
+        odm/lib64/libcodec2_hidl_plugin_sp.so|odm/lib64/libcodec2_soft_common_sp.so|odm/lib64/libcodec2_store_dolby_sp.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --replace-needed "libcodec2_vndk.so" "libcodec2_vndk_sp.so" "${2}"
+            ;;
+        odm/lib64/libcodec2_soft_ac4dec_sp.so|odm/lib64/libcodec2_soft_ddpdec_sp.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --replace-needed "libcodec2_vndk.so" "libcodec2_vndk_sp.so" "${2}"
+            "${PATCHELF}" --replace-needed "libcodec2_soft_common.so" "libcodec2_soft_common_sp.so" "${2}"
+            ;;
+        odm/lib64/libcodec2_vndk_sp.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --replace-needed "libui.so" "libui_sp.so" "${2}"
+            ;;
+        odm/lib64/libcodec2_hidl@1.0_sp.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --replace-needed "libcodec2_hidl_plugin.so" "libcodec2_hidl_plugin_sp.so" "${2}"
+            "${PATCHELF}" --replace-needed "libcodec2_vndk.so" "libcodec2_vndk_sp.so" "${2}"
+            ;;
+        odm/lib64/libui_sp.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --replace-needed "android.hardware.graphics.common-V3-ndk.so" "android.hardware.graphics.common-V5-ndk.so" "${2}"
+            "${PATCHELF}" --replace-needed "android.hardware.graphics.allocator-V1-ndk.so" "android.hardware.graphics.allocator-V2-ndk.so" "${2}"
+            ;;
+        # Dolby END
         *)
             return 1
             ;;
