@@ -1,4 +1,4 @@
-# Unpinned blobs from munch-user 14 RKQ1.211001.001 OS1.0.5.0.ULMMIXM release-keys
+# Unpinned blobs from munch_cn-user 14 UKQ1.231207.002 V816.0.10.0.ULMCNXM release-keys
 
 # GNSS
 vendor/bin/hw/android.hardware.gnss@2.1-service-qti

@@ -1,5 +1,4 @@
-# Unpinned blobs from munch-user 14 RKQ1.211001.001 OS1.0.5.0.ULMMIXM release-keys
-# lmi: lmi-user 11 RKQ1.200826.002 V12.5.3.0.RJKMIXM release-keys
+# Unpinned blobs from munch_cn-user 14 UKQ1.231207.002 V816.0.10.0.ULMCNXM release-keys
 
 # ADSP
 vendor/bin/adsprpcd
