@@ -244,6 +244,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
 
+$(call soong_config_set,lineage_health,charging_control_supports_bypass,false)
+
 # Media configs
 PRODUCT_PACKAGES += \
     media_codecs_c2.xml \
